@@ -1,0 +1,109 @@
+/*Ref: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids*/
+/*|| General */
+:root {
+    /* FA Animation settings https://fontawesome.com/docs/web/style/animate*/
+    --fa-animation-duration: 1s;
+    --fa-animation-iteration-count: 3;
+    --fa-animation-timing: ease-in-out;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    margin: 1rem 0;
+}
+
+img[src*="ax"] { /* chemical molecules*/
+    max-width: 35vmin;
+    margin: calc(.5rem + 1vmin) 0;
+    border-radius: 50%;
+}
+
+
+/*|| Utilities */
+
+
+/* || Icons */
+.robot1 {
+    color: blue;
+}
+
+.robot2 {
+    color: purple;
+}
+
+.safe {
+    color: green;
+}
+
+.toxic {
+    color: red;
+}
+
+.inline-icon {
+    font-size: 1.5em;
+}
+
+.img-icon {
+    font-size: 0.75rem;
+    margin: 1rem;
+}
+
+.img-icon-robot {
+    font-size: 5em;
+}
+
+
+.stack-img {
+    font-size: calc(.5rem + 1vmin);
+}
+
+.stack-img-robot {
+    position: relative;
+    top: 1.5em;
+    left: .75em;
+}
+
+
+#jspsych-html-button-response-stimulus .stack-img {
+    position: relative;
+    top: 7.5vmin;
+    margin-top: -7.5vmin;
+}
+
+.robot-label-img .stack-img {
+    position: relative;
+    right: 20vmin;
+    top: 7.5vmin;
+    margin-top: -7.5vmin;
+}
+
+.important {
+    margin-top: 1em;
+    margin-bottom: 1em
+}
+
+
+.grid-col, #jspsych-html-button-response-btngroup {
+    display: grid;
+    grid-auto-flow: column;
+    gap: calc(.5rem + 5vmin);
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#jspsych-content > p {
+    min-width: 800px;
+    max-width: 1000px;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+}
+
+#jspsych-html-button-response-btngroup img:hover {
+    box-shadow: 0 0 calc(.5rem + 1vmin) calc(.5rem + 1vmin) yellow;
+    border-radius: 50%;
+}

@@ -1,0 +1,5 @@
+id,gender,age,feedback,meanMainRTsecs,totalTimeElapsedmins,proportionCorrect
+1,Female,43,Thanks,1,1,0
+3,Male,22,Very interesting.,3,9,0.8
+2,Male,20,NONE,4,5,1
+4,Female,38,thanks,5,6,0.8
