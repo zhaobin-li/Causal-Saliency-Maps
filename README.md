@@ -1,3 +1,8 @@
+# Causal Saliency Maps  
+
+Generate causal saliency maps to explain CNN classifications using the Potential Outcomes Framework.  
+This project unifies three XAI methods: [LIME](https://dl.acm.org/doi/10.1145/2939672.2939778), [RISE](http://bmvc2018.org/contents/papers/1064.pdf), and [Bayesian Teaching](https://www.nature.com/articles/s41598-021-89267-4).  
+
 # Install
 
 Required: PyTorch, Captum, scikit-image, scikit-learn, feather, tqdm, pytest. Optional: pytest-repeat, ipython
